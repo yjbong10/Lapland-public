@@ -1,0 +1,191 @@
+.vidModal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.wrapper {
+    width: calc(177.78vh - calc(2.5rem * calc(19 / 9)));
+    height: calc(100vh - 2.5rem);
+    box-sizing: border-box;
+    /* padding: 2.5rem calc(2.5rem * calc(19 / 9)); */
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .wrapper {
+        width: calc(100vw);
+        height: calc(56.25vw);
+        /* padding: calc(10rem / calc(19 / 9)); */
+        /* padding: 5rem 5rem; */
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .wrapper {
+        width: calc(100vw);
+        height: calc(56.25vw);
+        /* padding: calc(10rem / calc(19 / 9)); */
+        /* padding: 5rem 5rem; */
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .wrapper {
+        padding: 0rem 0;
+    }
+}
+
+.vidModal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.wrapper > iframe {
+    z-index: 21;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    border: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    height: 34px;
+    padding: 40px 30px;
+    margin: auto;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: 22;
+}
+
+@media only screen and (max-width: 650px) {
+    .btn {
+      width: 20px;
+      height: 34px;
+      padding: 30px 25px;
+    }
+}
+  
+  @media only screen and (max-width: 450px) {
+    .btn {
+      width: 30px;
+      height: 40px;
+      padding: 0px 0px;
+    }
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
+.btn_back {
+    outline: none;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2)
+      url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDE5LDMgLTIsLTIgLTE2LDE2IDE2LDE2IDEsLTEgLTE1LC0xNSAxNSwtMTUgeiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==')
+      no-repeat center;
+}
+
+.btn_next {
+    outline: none;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2)
+      url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjM0Ij48cGF0aCBkPSJtIDEsMyAyLC0yIDE2LDE2IC0xNiwxNiAtMSwtMSAxNSwtMTUgLTE1LC0xNSB6IiBmaWxsPSIjRkZGIi8+PC9zdmc+')
+      no-repeat center;
+}
+
+@media only screen and (max-width: 650px) {
+    .btn_back, 
+    .btn_next {
+      background-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .btn_back, 
+    .btn_next {
+      background-size: 1rem;
+    }
+  }
+
+.vidModal_toolbar_container {
+    height: 50px;
+    z-index: 30;
+
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vidModal_toolbar {
+    height: 50px;
+    margin: 0;
+
+    padding-left: 0;
+    padding-right: 20px;
+    flex: 0 0 auto;
+}
+
+.vidModal_toobar_items {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0;
+    color: #fff;
+    font-size: 120%;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.toolbar_close_btn {
+    vertical-align: middle;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIj48cGF0aCBkPSJtIDEsMyAxLjI1LC0xLjI1IDcuNSw3LjUgNy41LC03LjUgMS4yNSwxLjI1IC03LjUsNy41IDcuNSw3LjUgLTEuMjUsMS4yNSAtNy41LC03LjUgLTcuNSw3LjUgLTEuMjUsLTEuMjUgNy41LC03LjUgLTcuNSwtNy41IHoiIGZpbGw9IiNGRkYiLz48L3N2Zz4=')
+    no-repeat center;
+    z-index: 32;
+}
+
+.toolbar_close_btn {
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.7;
+    /* added outline none */
+    outline: none;
+}
+  .toolbar_close_btn:hover {
+    opacity: 1;
+}
+  .toolbar_close_btn:active {
+    outline: none;
+}
+  
+  .toolbar_close_btn_disable {
+    cursor: default;
+    opacity: 0.5;
+}
+  .toolbar_close_btn_disable:hover {
+    opacity: 0.5;
+}

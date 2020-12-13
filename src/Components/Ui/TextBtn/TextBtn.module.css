@@ -1,0 +1,57 @@
+.btn_container {
+    width: min-content;
+    padding: 1rem 2rem;
+    background: rgba(188, 143, 143, 0.438);
+    cursor: pointer;
+
+    outline: none;
+    border: none;
+    border-radius: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s ease;
+
+    user-select: none;
+}
+
+.btn_text {
+    color: var(--s-color);
+    font-size: var(--btn-text);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.btn_container:hover {
+    width: min-content;
+    padding: 1rem 2rem;
+    background: rosybrown;
+    background: rgb(156, 119, 119);
+    transition: all .3s ease;
+}
+
+.btn_icon {
+    margin: 0;
+    height: calc(var(--btn-text) - .1rem);
+    width: calc(var(--btn-text) - .1rem);
+    fill: var(--s-color);
+    margin-left: 1rem;
+}
+
+.btn_disabled {
+    pointer-events: none;
+    opacity: .3;
+    transform: translateY(.1rem);
+    transition: all 1s ease;
+}
+
+.btn_loop {
+    background: rgb(87, 133, 130);
+    transition: all 0.5s ease;
+}
+
+.btn_loop:hover {
+    background: rgb(102, 145, 116);
+    transition: all 0.5s ease;
+}

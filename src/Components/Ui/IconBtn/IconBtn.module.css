@@ -1,0 +1,12 @@
+.navBar_icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--s-color);
+    cursor: pointer;
+    transition: fill .3s ease;
+}
+
+.navBar_icon:hover {
+    fill: rgb(255, 255, 255);
+    transition: fill .3s ease;
+}

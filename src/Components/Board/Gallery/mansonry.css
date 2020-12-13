@@ -1,0 +1,39 @@
+.my-masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    margin-left: -1rem; /* gutter size offset */
+    width: auto;
+  }
+  .my-masonry-grid_column {
+    padding-left: 1rem; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+    /* background: grey; */
+    margin-bottom: .5rem;
+  }
+
+
+  /* added span tag before img because of lazy loading blur.css */
+  /* they are conflicting each other so I deleted the styles of img of blur.css*/
+  /* this control the final img styles */
+  .my-masonry-grid_column img,
+  .my-masonry-grid_column > div > iframe  { /* change img to reference your elements you put in <Masonry> */
+    width: 100%;
+    cursor: pointer;
+    opacity: 1;
+    transition: all .3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .my-masonry-grid_column img:hover { /* change img to reference your elements you put in <Masonry> */
+    width: 100%;
+    cursor: pointer;
+    opacity: .9;
+    transform: scale(1.01);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all .3s ease;
+  }

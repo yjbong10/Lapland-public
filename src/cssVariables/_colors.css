@@ -1,0 +1,21 @@
+html {
+    --p-color: #755353;
+    --p-color-dark: #534646;
+    --p-color-black: #251d1d;
+    --s-color: #E8DFDF;
+    --s-color-light: #f7ebeb;
+    --s-color-white: #fdfaf1;
+    --t-color: #b8c4e9;
+    --f-color: #d8abab;
+
+
+    --sideBar-bg: hsla(0, 17%, 39%, 0.9);
+    --sideBar-bg: hsla(34, 14%, 42%, 0.9);
+    --sideBar-bg: hsla(234, 25%, 33%, 0.9);
+
+    --banner-light: #4c4c6b;
+    --banner:  #3a3c42;
+    --banner-dark: #3f3131;
+
+    --logo-bg: rgba(230, 220, 229, 0.788);
+}

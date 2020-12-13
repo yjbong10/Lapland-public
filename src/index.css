@@ -1,0 +1,51 @@
+@import './cssVariables/_colors.css';
+@import './cssVariables/_font.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400&display=swap');
+ 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*::-webkit-scrollbar {
+  height: 5px; 
+  width: 5px;
+  z-index: 1;
+  background: rgb(112, 94, 94);
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+  opacity: 0;
+  z-index: 1;
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(250, 250, 241);
+  background-color: var(--s-color);
+  border-radius: 20px;
+  height: 1px;
+  z-index: 1;
+} 
+
+html {
+  font-size: 62.5%; 
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--p-color);
+}
+
+code {
+  font-family: 'Open Sans', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,93 @@
+.sideBar_container {
+    position: fixed;
+    /* height need to set to 100% not vh */
+    /* for some reason full screen will not following padding if vh*/
+    height: 100%;
+    width: 45%;
+    min-width: 450px;
+    top: 0;
+    right: 0;
+
+    background: var(--sideBar-bg);
+    z-index: 5;
+    padding: 10rem 5rem 10rem 5rem;
+
+    transform: translateX(0);
+    transition: transform .8s cubic-bezier(.35,.91,.48,1), width .8s cubic-bezier(.35,.91,.48,1);
+}
+
+.sideBar_container_content {
+    width: 100%;
+    min-width: 350px;
+    height: 100%;
+    /* min-height: 400px; */
+    overflow: auto;
+    padding: 2rem 2rem;
+    color: var(--s-color);
+    scroll-behavior: smooth;
+}
+
+.sideBar_hide {
+    transform: translateX(100%);
+    transition: transform .8s cubic-bezier(.25,.97,.71,1.03);
+}
+
+.sideBar_btn_container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.full_width_btn,
+.full_width_btn_full {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border-top-left-radius: 100rem;
+    border-bottom-left-radius: 0rem;
+}
+
+.full_width_btn {
+    background-color: var(--sideBar-bg);
+    transform: translateX(-100%);
+    transition: transform .6s ease-out, background .3s ease;
+}
+
+.full_width_btn:hover {
+    background: hsla(234, 25%, 33%, .95);;
+    transition: background .3s ease;
+}
+
+.full_width_btn_full {
+    background-color: transparent;
+    transform: translateX(0);
+    transition: transform .5s ease-out;
+}
+
+.sideBar_full {
+    width: 100%;
+    transition: width .8s cubic-bezier(.35,.91,.48,1), transform 1s cubic-bezier(.35,.91,.48,1);
+}
+
+@media only screen and (max-width: 650px) {
+    .sideBar_container {
+        width: 100%;
+        min-width: 100%;
+        top: 0;
+        left: 0;
+        overflow-y: hidden;
+        overflow-x: auto;
+
+        padding: 10rem 1rem 10rem 1rem;
+    }
+
+    .full_width_btn {
+        display: none;
+    }
+}

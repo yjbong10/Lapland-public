@@ -1,0 +1,94 @@
+.navBar_container {
+    height: 10rem;
+    width: 100vw;
+    /* min-width: 300px; */
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+    z-index: 10;
+    user-select: none;
+}
+
+.navBar_logo {
+    width: 190px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.navBar_logo:hover {
+    transform: translateY(-.2rem);
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.navBar_icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #6d6868;
+    fill: var(--p-color-dark);
+    cursor: pointer;
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navBar_icon:hover {
+    fill: #383535;
+    fill: var(--p-color-black);
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navBar_icon_open {
+    fill: var(--s-color);
+}
+
+.navBar_icon_open:hover {
+    fill: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1100px) {
+    .navBar_logo {
+        width: 160px;
+    }
+}
+  
+@media only screen and (max-width: 450px) {
+    .navBar_container {
+        height: 9rem;
+        padding: 0 2rem;
+    }
+
+    .navBar_logo {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .navBar_container {
+        height: 7rem;
+        padding: 0 2rem;
+    }
+
+    .navBar_logo {
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .navBar_container {
+        height: 6rem;
+        padding: 0 .5rem;
+        padding-top: .5rem;
+    }
+
+    .navBar_logo {
+        width: 100%;
+    }
+
+    .navBar_icon {
+        height: 1.2rem;
+        margin: auto;
+    }
+}

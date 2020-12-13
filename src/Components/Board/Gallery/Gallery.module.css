@@ -1,0 +1,44 @@
+.bg {
+    background: linear-gradient(to right, #0f3443, #443d63); 
+    background: linear-gradient(to right bottom, #e0dae0, #99a6a8); 
+    padding: 0 10rem;
+    padding-top: 1rem;
+    user-select: none;
+    /* padding-bottom: 1rem; */
+}
+
+@media only screen and (max-width: 650px) {
+    .bg {
+        padding: 0 4rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bg {
+        padding: 0 0rem;
+    }
+}
+
+
+.video_container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video_container iframe, 
+.video_container .video_container_overlay {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_container .video_container_overlay {
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2;
+}

@@ -1,0 +1,67 @@
+:root {
+    --h1-lg: 7rem;
+    --h2: 6rem;
+    --h3: 4rem;
+    --h4: 2rem;
+    --h5: 1.6rem;
+    --p: 1.5rem;
+    --p-sm: 1.2rem;
+    --btn-text: 1.6rem
+}
+
+@media only screen and (min-width: 1620px) {
+    :root {
+        --h1-lg: 8rem;
+        --h2: 7rem;
+        --h3: 4rem;
+        --h4: 3rem;
+        --h5: 2rem;
+        --p: 1.8rem;
+        --p-sm: 1.4rem;
+
+        --btn-text: 1.9rem
+    }   
+}
+
+
+@media only screen and (max-width: 650px) {
+    :root {
+        --h1-lg: 7rem;
+        --h2: 6rem;
+        --h3: 3rem;
+        --h4: 2rem;
+        --h5: 1.5rem;
+        --p: 1.4rem;
+        --p-sm: 1.2rem;
+
+        --btn-text: 1.4rem
+    }    
+}
+
+@media only screen and (max-width: 350px) {
+    :root {
+        --h1-lg: 6rem;
+        --h2: 5rem;
+        --h3: 1.9rem;
+        --h4: 1.6rem;
+        --h5: 1.4rem;
+        --p: 1.3rem;
+        --p-sm: 1.2rem;
+
+        --btn-text: 1.2rem
+    }    
+}
+
+@media only screen and (max-width: 150px) {
+    :root {
+        --h1-lg: 3rem;
+        --h2: 2rem;
+        --h3: 1rem;
+        --h4: .7rem;
+        --h5: .6rem;
+        --p: .5rem;
+        --p-sm: .4rem;
+
+        --btn-text: .5rem
+    }    
+}
