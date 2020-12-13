@@ -20,6 +20,7 @@ Website: [https://yjbong10.github.io/Lapland-public/](https://yjbong10.github.io
 * Javascript ES6
 * React 16 (useState, useEffect, useRef, portals)
 * Redux
+* Git & GitHub
 * Adobe Illustrator
 
 ### `Packages and Resources used:`
