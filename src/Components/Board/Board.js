@@ -74,7 +74,7 @@ const Board = (props) => {
         //check if board scroll height - viewport height equal to current scroll position
         //if yes means current scroll position has reached the container's available scroll height 
         //thats mean we reached the bottom
-        } else if ((height - offsetHeight) === scrollTop) {
+        } else if ((height - offsetHeight) === Math.ceil(scrollTop)) {
             setCurrSection(lastIndex)
         }
     } 
