@@ -5,7 +5,7 @@ A simple travel gallery website for showcasing photos and videos.
 
 Website: [https://yjbong10.github.io/Lapland-public/](https://yjbong10.github.io/Lapland-public/)
 
-<sup>This was initially created for personal use and hosted elsewhere. I decided to include it in portfolio and hosted on GitHub pages for showcase. All the photos and videos are replaced by random from unsplash and youtube. </sup>  
+<sup>This was initially created for personal use and hosted elsewhere. I decided to include it in my portfolio and hosted it on GitHub pages. All the photos and videos are replaced by random ones from Unsplash and Youtube.</sup>  
 
 
 ### `Features:`
